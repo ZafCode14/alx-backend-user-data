@@ -47,7 +47,7 @@ def get_db() -> mysql.connector.connection.MySQLConnection:
     return cnx
 
 
-def main():
+def main() -> None:
     """main function"""
     db = get_db()
     cursor = db.cursor()
