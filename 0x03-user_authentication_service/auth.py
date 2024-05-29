@@ -4,7 +4,6 @@ from db import DB
 from user import User
 from sqlalchemy.orm.exc import NoResultFound
 from uuid import uuid4
-from typing import Optional
 import bcrypt
 
 
@@ -59,7 +58,7 @@ class Auth:
         except NoResultFound:
             return None
 
-    def get_user_from_session_id(self, session_id: str) -> Optional[User]:
+    def get_user_from_session_id(self, session_id: str) -> User:
         """Gets user from session id"""
         db = self._db
         try:
