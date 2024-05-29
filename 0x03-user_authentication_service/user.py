@@ -1,4 +1,4 @@
-#!/usr/bun/env python3
+#!/usr/bin/env python3
 """Module with a python script"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
